@@ -1,0 +1,22 @@
+$primary-color: #cbcbcb;
+$secondary-color: #fff;
+$color-bg: #1f1f1f;
+$highlighter: #00bf63;
+$color-btn: #430c18;
+
+@font-face{
+  font-family: 'Horizon Bold';
+  src: url('assets/fonts/horizon.otf');
+}
+
+@font-face{
+  font-family: 'DMSans';
+  font-weight: 700;
+  src: url('assets/fonts/DMSans-VariableFont_opsz\,wght.ttf');
+}
+
+$breakpoints: (
+  small-screen: 375px,
+  medium-screen: 752px,
+  big-screen: 1200px
+)

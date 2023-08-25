@@ -1,0 +1,16 @@
+@use '../../App.scss' as *;
+
+
+.stack-list{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  max-width: fit-content;
+}
+.stack-icon{
+  color:$secondary-color ;
+  font-size: 28px;
+  transition: color 0.5s;
+}

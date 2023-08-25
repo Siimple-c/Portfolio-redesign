@@ -1,0 +1,43 @@
+@use '../../App.scss' as *;
+
+.nav-bar{
+  // border-bottom: 1px solid black;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+
+  .list-item{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    transition: all ease .2s;
+
+    &:not(:last-child){
+      margin-right: 50px;
+      &:hover{
+        opacity: .7;
+      }
+    }
+
+    .link{
+      text-decoration: none;
+      color: $primary-color;
+    }
+
+  }
+}
+
+#cv{
+  padding: 5px 5px;
+  border-radius: 10px;
+  background: $highlighter;
+  color: $color-btn;
+  transition: all ease-out  .2s;
+
+  &:hover{
+    color: $secondary-color;
+  }
+}
