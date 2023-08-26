@@ -6,6 +6,12 @@
   }
 };
 
+@mixin tab-screen{
+  @media screen and (max-width: map-get($breakpoints, tab-screen)){
+    @content;
+  }
+}
+
 @mixin medium-screen {
   @media screen and (max-width: map-get($breakpoints, medium-screen)){
     @content;

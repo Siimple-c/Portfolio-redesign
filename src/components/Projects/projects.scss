@@ -67,6 +67,10 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 10rem;
   row-gap: 6rem;
+  @include tab-screen{
+  column-gap: 3rem;
+  row-gap: 4rem;
+  }
   @include small-screen{
     display: flex;
     flex-direction: column;
@@ -86,14 +90,17 @@
     }
   }
 
-  &:nth-child(2) p,
-   &:nth-child(4) p{
-      order: 1;
-  }
-  &:nth-child(2) a,
-  &:nth-child(4) a
-  {
-      order: 2;
+  @include small-screen{
+
+    &:nth-child(2) p,
+    &:nth-child(4) p{
+        order: 1;
+    }
+    &:nth-child(2) a,
+    &:nth-child(4) a
+    {
+        order: 2;
+    }
   }
 }
 
@@ -101,6 +108,9 @@
   width: 20rem;
   border-radius: 3rem;
   border: 1px solid rgba(0,0,0,0.1);
+  @include tab-screen{
+    width: 17rem;
+  }
   @include small-screen{
     width: 15rem;
   }

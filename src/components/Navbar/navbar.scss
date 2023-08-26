@@ -3,8 +3,15 @@
 
 
 .nav-bar{
-  
+  @include small-screen{
+    display: none;
+    &.expanded{
+      display: block;
+    }
+    }
 }
+
+
 
 .nav-list{
   display: flex;
@@ -12,7 +19,7 @@
   padding-top: 20px;
   @include small-screen{
     position: fixed;
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
     z-index: 30;
     height: fit-content;
@@ -61,3 +68,35 @@
     display: inline-block;
   }
 }
+
+.overlay{
+  display: none;
+  @include small-screen{
+    &.expanded{
+      display: block;
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 25;
+    background-color: rgba(43, 42, 42, 0.5);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.toggle-sidebar{
+  display: none;
+  @include small-screen{
+   display: block;
+   position: fixed;
+   top: 2%;
+   z-index: 28;
+   right: 10%;
+   font-size: 2.5rem;
+   color: $primary-color;
+   cursor: pointer;
+ }
+ }

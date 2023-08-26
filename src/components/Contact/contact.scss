@@ -6,7 +6,10 @@
   margin-top: 10rem;
   margin-bottom: 4rem;
   color:  $secondary-color;
-  @include small-screen{
+    @include tab-screen{
+    // font-size: 2rem;
+  }
+    @include small-screen{
     font-size: 2.4rem;
   }
 
@@ -63,6 +66,10 @@ a{
 .contact-details{
   font-size: 2.5rem;
   text-align: end;
+  @include tab-screen{
+  font-size: 2rem;
+    text-align: end;
+  }
   @include small-screen{
   font-size: 1.7rem;
     text-align: end;
@@ -83,6 +90,9 @@ a{
 
   @include large-screen{
     width: 45rem;
+  }
+  @include tab-screen{
+    width: 31rem;
   }
   @include small-screen{
     width: 34rem;

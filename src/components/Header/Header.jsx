@@ -2,13 +2,11 @@ import Navbar from '../Navbar/Navbar';
 import './header.scss';
 import Stack from '../Stack/Stack';
 import ProfilePic from '../../assets/images/Portfolio-image.png'
-import {FaEllipsisH} from 'react-icons/fa';
 
 
 function Header() {
   return (
     <>
-    <FaEllipsisH className= "toggle-sidebar"/>
     <Navbar/>
       <header className='header_container'>
         <div className="landingpage-left">
@@ -23,7 +21,7 @@ function Header() {
           <img src={ProfilePic} alt="profile-pic" />
         </div>
         <p className="jd">Frontend - w<span className="webdev-junction">e</span>b</p>
-        <div className="overlay"></div>
+        
       </header>
     </>
   )
