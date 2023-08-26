@@ -19,7 +19,11 @@ body{
   scroll-behavior: smooth;
 
   @include large-screen{
-    padding: 0 70px ;
+    padding: 0 65px ;
+  }
+
+  @include small-screen{
+    padding: 0 25px;
   }
 }
 

@@ -1,27 +1,61 @@
 @use '../../App.scss' as *;
+@use '../../mixins.scss' as *;
+
 
 .header_container{
-  height: 90vh;
+  height: calc(100vh - 10vh);
   display: flex;
   position: relative;
+  @include medium-screen{
+    flex-grow: 1;
+    background-image: url(../../assets/images/BG-mid.jpg);
+  }
+  @include small-screen{
+    background-image: url(../../assets/images/BG-small.jpg);
+  }
 }
 
 .landingpage-left{
   width: 70%;
-  margin-top: 20vh;
+  position: relative;
+  margin-top: 100px;
   z-index: 10;
+  @include medium-screen{
+  margin-top: 290px;
+  width: 100%;
+  }
+  @include small-screen{
+  width: 85%;
+  margin-top: 0;
+  }
 }
 
 .intro{
   font-size: 28px;
   opacity: .7;
   margin-bottom: 8px;
+  @include small-screen{
+    font-size: 20px;
+    opacity: 1;
+    text-shadow:0px 2px #292525;
+    }
 }
+
+.name-intro{
+  @include small-screen{
+    position: absolute;
+    top: 430px;
+    }
+}
+
 
 .fullname{
   font-size: 23px;
   opacity: .89;
   margin-top: 0;
+  @include small-screen{
+  font-size: 18px;
+      }
 }
 
 .about_me{
@@ -29,14 +63,27 @@
   letter-spacing: 1px;
   margin-top: 25px;
   opacity: .7;
+  @include small-screen{
+  margin-top:540px;
+    text-shadow:0px 2px #2b2a2a;
+    opacity: .9;
+}
 }
 
 .jd{
   font-family: "Horizon Bold", "calibri";
   font-size: 60px;
   position: absolute;
-  top: 54vh;
+  bottom: 0;
   color: $secondary-color;
+  @include medium-screen{
+    font-size: 40px;
+  }
+
+  @include small-screen{
+    font-size: 25px;
+    bottom: 0px;
+  }
 }
 
 .stack-list{
@@ -57,15 +104,37 @@
   margin-left: 16px;
   margin-right: 16px;
 
+  @include medium-screen{
+    font-size: 70px;
+  }
+
+  @include small-screen{
+    font-size: 43px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
   &::before{
     content:"d"; 
     transform:translateY(-60px);
+    @include medium-screen{
+      transform:translateY(-50px);
+    }
+    @include small-screen{
+      transform:translateY(-30px);
+    }
      }
 
     &::after{
       content:"v"; 
       left:6.2px;
       transform:translateY(80px);
+      @include medium-screen{
+        transform:translateY(70px);
+      }
+      @include small-screen{
+        transform:translateY(38px);
+      }
     }
 
     &::before,
@@ -76,6 +145,14 @@
       right:0;
   font-size: 75px;
   margin: 0 auto;
+
+  @include medium-screen{
+    font-size: 55px;
+  }
+  @include small-screen{
+      left:1.1px;
+      font-size: 39px;
+  }
   }
 }
 
@@ -86,7 +163,7 @@
   &::before{
     content: "";
     position: absolute;
-    top: 13vh;
+    bottom: 0;
     right: 0;
     background: linear-gradient(to right, #646464, #f5f5f5);
     width: 30rem;
@@ -96,8 +173,40 @@
   img{
     position: absolute;
     width: 34rem;
-    top: 17vh;
     bottom: 0;
     right: 4rem;
+  }
+
+  @include medium-screen{
+    display: none;
+  }
+}
+
+.toggle-sidebar{
+ display: none;
+ @include small-screen{
+  display: block;
+  position: fixed;
+  top: 2%;
+  z-index: 28;
+  right: 10%;
+  font-size: 2.5rem;
+  color: $highlighter;
+  cursor: pointer;
+}
+}
+
+.overlay{
+  display: none;
+  @include small-screen{
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 25;
+    background-color: rgba(43, 42, 42, 0.5);
+    backdrop-filter: blur(10px);
   }
 }

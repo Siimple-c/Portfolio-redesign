@@ -17,3 +17,9 @@
     @content;
   }
 }
+
+@mixin max-screen {
+  @media screen and (max-width: map-get($breakpoints, max-screen)){
+    @content;
+  }
+}

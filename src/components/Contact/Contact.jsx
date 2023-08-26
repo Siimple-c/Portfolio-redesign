@@ -14,9 +14,9 @@ function Contact() {
 
   return (
     <>
-      <h1 className="contact-header">CONTACT ME</h1>
+      <h1 className="contact-header">GET IN TOUCH</h1>
       <div className="form-container">
-        <form method="get" onSubmit={handleSubmit}>
+        <form method="get" onSubmit={handleSubmit} className="form-block">
           <label className="label" htmlFor="">
             <input value={name} onChange={e => setName(e.target.value)} placeholder="NAME" className="textinput"/>
           </label>
@@ -26,7 +26,7 @@ function Contact() {
           <label className="label" htmlFor="">
             <textarea value={msg} onChange={e => setMsg(e.target.value)} placeholder="MESSAGE" className="textinput ta"/>
           </label>
-          <button type="submit" className="submit-btn">SUBMIT</button>
+          <button type="submit" className="submit-btn">SEND</button>
         </form>
         <div>
           <div className="contact-details">

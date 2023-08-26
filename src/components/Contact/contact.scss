@@ -1,10 +1,15 @@
 @use '../../App.scss' as *;
+@use '../../mixins.scss'as *;
 
 .contact-header{
   font-family: 'Horizon bold', 'calibri', sans-serif;
   margin-top: 10rem;
   margin-bottom: 4rem;
   color:  $secondary-color;
+  @include small-screen{
+    font-size: 2.4rem;
+  }
+
 }
 
 a{
@@ -15,6 +20,16 @@ a{
 .form-container{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
+  @include small-screen{
+    display: block;
+  }
+}
+
+.form-block{
+  @include small-screen{
+    margin-bottom: 4rem;
+  }
 }
 
 .social-icons{
@@ -22,6 +37,10 @@ a{
   justify-content: flex-end;
   gap: 2rem;
   font-size: 2.5rem;
+  @include small-screen{
+  justify-content: end;
+
+  }
 }
 
 .social-icon{
@@ -44,6 +63,10 @@ a{
 .contact-details{
   font-size: 2.5rem;
   text-align: end;
+  @include small-screen{
+  font-size: 1.7rem;
+    text-align: end;
+  }
 }
 
 .textinput{
@@ -57,6 +80,13 @@ a{
   height: 3rem;
   outline: none;
   background-color: $primary-color;
+
+  @include large-screen{
+    width: 45rem;
+  }
+  @include small-screen{
+    width: 34rem;
+  }
 }
 
 .ta{

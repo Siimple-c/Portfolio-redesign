@@ -1,13 +1,23 @@
 @use '../../App.scss' as *;
+@use '../../mixins.scss' as *;
+
 
 .nav-bar{
-  // border-bottom: 1px solid black;
+  
 }
 
 .nav-list{
   display: flex;
   justify-content: flex-end;
   padding-top: 20px;
+  @include small-screen{
+    position: fixed;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 30;
+    height: fit-content;
+    transition: all ease-in-out 0.3s;
+  }
 
   .list-item{
     list-style: none;
@@ -17,6 +27,11 @@
 
     &:not(:last-child){
       margin-right: 50px;
+      @include small-screen{
+      margin-right: 30px;
+      font-size: 1.3rem;
+      display: inline-block;
+      }
       &:hover{
         opacity: .7;
       }
@@ -39,5 +54,10 @@
 
   &:hover{
     color: $secondary-color;
+  }
+
+  @include small-screen{
+    font-size: 1.3rem;
+    display: inline-block;
   }
 }
