@@ -25,6 +25,7 @@
   margin-top: 100px;
   z-index: 10;
   @include medium-screen{
+    // border: 1px solid yellow;
   margin-top: 390px;
   width: 90%;
   }
@@ -33,8 +34,10 @@
   }
 
   @include small-screen{
-  width: 85%;
-  margin-top: 70%;
+    position: absolute;
+    bottom: 20%;
+    width: 85%;
+    margin-top: 70%;
   }
 }
 
