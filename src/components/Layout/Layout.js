@@ -1,15 +1,18 @@
 import './layout.scss';
 import React from 'react';
-import Header from '../Header/Header'
-import Contact from '../Contact/Contact'
-import Projects from '../Projects/Projects'
+import Navbar from '../Navbar/Navbar'
+import Header from '../Header/Header';
+import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
 
 const Layout = () => {
   return (
     <>
-    <Header/>
-    <Projects/>
-    <Contact/>
+        
+        <Navbar/>
+        <Header/>
+        <Projects/>
+        <Contact/>
     </>
   )
 }

@@ -5,6 +5,10 @@
   font-size: 62.5%;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: $color-bg;
   color: $primary-color;
@@ -15,7 +19,6 @@ body{
   padding:0 20px;
   max-width: 1152px;
   margin: 0 auto;
-  scroll-behavior: smooth;
 
   @include large-screen{
     // padding: 0 65px ;

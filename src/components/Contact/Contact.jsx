@@ -13,7 +13,7 @@ function Contact() {
   }
 
   return (
-    <>
+    <section id= "contact">
       <h1 className="contact-header">GET IN TOUCH</h1>
       <div className="form-container">
         <form method="get" onSubmit={handleSubmit} className="form-block">
@@ -40,7 +40,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

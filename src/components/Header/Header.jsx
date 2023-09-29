@@ -1,4 +1,3 @@
-import Navbar from '../Navbar/Navbar';
 import './header.scss';
 import Stack from '../Stack/Stack';
 import ProfilePic from '../../assets/images/Portfolio-image.png'
@@ -7,7 +6,6 @@ import ProfilePic from '../../assets/images/Portfolio-image.png'
 function Header() {
   return (
     <>
-    <Navbar/>
       <header className='header_container'>
         <div className="landingpage-left">
           <div className="name-intro"><h2 className="intro"> Hello! the name's Chuka,</h2>
