@@ -25,7 +25,7 @@ function Projects() {
             <li>CSS</li>
             <li>Wordpress</li>
           </ul>
-          <a href="https://oohacademyng.com/" className="project-link">GO</a>
+          <a href="https://oohacademyng.com/" className="project-link"  target="_blank" rel="noreferrer" >GO</a>
         </div>
         <div className="project">
           <a href="https://naim-advisory.com/" target="_blank" rel="noreferrer" className="img-container"><img src={naim} className="project-img" alt="second citizenship site" /></a>
@@ -36,7 +36,7 @@ function Projects() {
             <li>CSS</li>
             <li>Wordpress</li>
           </ul>
-          <a href="https://naim-advisory.com/" className="project-link">GO</a>
+          <a href="https://naim-advisory.com/" className="project-link" target="_blank" rel="noreferrer" >GO</a>
         </div>
         <div className="project">
           <a href="https://thgram.netlify.app/" target="_blank" rel="noreferrer" className="img-container"><img src={socialmedia} className="project-img" alt="social media website" /></a>
@@ -46,7 +46,7 @@ function Projects() {
             <li>Javascript</li>
             <li>SCSS</li>
           </ul>
-          <a href="https://thgram.netlify.app/" className="project-link">GO</a>
+          <a href="https://thgram.netlify.app/" className="project-link" target="_blank" rel="noreferrer" >GO</a>
         </div>
         <div className="project">
           <a href="https://mslyn-stores.netlify.app/" target="_blank" rel="noreferrer" className="img-container"><img src={ecomm} className="project-img" alt="ecommerce website" /></a>
@@ -56,7 +56,7 @@ function Projects() {
             <li>React</li>
             <li>CSS</li>
           </ul>
-          <a href="https://mslyn-stores.netlify.app/" className="project-link">GO</a>
+          <a href="https://mslyn-stores.netlify.app/" className="project-link" target="_blank" rel="noreferrer" >GO</a>
         </div>
         
       </div>
