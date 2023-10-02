@@ -34,9 +34,9 @@ function Contact() {
             <a href="tel:+2348125470663" className="num">+2348125470663</a>
           </div>
           <div className="social-icons">
-            <a href="https://twitter.com/knowcode_" target="_blank" className="social-icon"><LuTwitter/></a>
-            <a href="https://tinyurl.com/chuka-linkedin" target="_blank" className="social-icon"><FaLinkedinIn/></a>
-            <a href="https://www.instagram.com/siimple_c/" target="_blank" className="social-icon"><FaInstagram/></a>
+            <a href="https://twitter.com/knowcode_" target="_blank" rel="noreferrer"  className="social-icon"><LuTwitter/></a>
+            <a href="https://tinyurl.com/chuka-linkedin" target="_blank" rel="noreferrer"  className="social-icon"><FaLinkedinIn/></a>
+            <a href="https://www.instagram.com/siimple_c/" target="_blank" rel="noreferrer"  className="social-icon"><FaInstagram/></a>
           </div>
         </div>
       </div>
