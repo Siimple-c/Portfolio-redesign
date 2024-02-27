@@ -1,7 +1,7 @@
 import './projects.scss';
 import {VscGithubInverted} from 'react-icons/vsc';
 import oohacad from '../../assets/images/projects/OOH Acadmey.jpg';
-import ecomm from '../../assets/images/projects/ecommerce store.jpg';
+import ecomm from '../../assets/images/projects/SOLFIN.jpg';
 import naim from '../../assets/images/projects/Naim Advisory.jpg';
 import socialmedia from '../../assets/images/projects/project - social media.jpg';
 
@@ -9,13 +9,24 @@ function Projects() {
   return (
     <section id= "projects">
       <div className= "projects-header">
-        <h1>PROJECTS</h1>
+        <h1>PROJECT PORTFOLIO</h1>
           <a href="https://github.com/Siimple-c" target="_blank" rel="noreferrer"className="github-logo" > 
           <VscGithubInverted className="icon"/>
           </a>
       </div>
 
       <div className ="projects-container">
+        <div className="project">
+          <a href="https://mslyn-stores.netlify.app/" target="_blank" rel="noreferrer" className="img-container"><img src={ecomm} className="project-img" alt="ecommerce website" /></a>
+          <h3 className="project-title">SOLARIS FINANCE</h3>
+          <p>Fintech app for finance managements & investments. Fully responsive, functional and user-friendly. </p>
+          <ul className="project-stack">
+            <li>EJS</li>
+            <li>CSS</li>
+            <li>Wordpress</li>
+          </ul>
+          <a href="https://solarisfinance.com/" className="project-link" target="_blank" rel="noreferrer" >GO</a>
+        </div>
         <div className="project">
           <a href="https://oohacademyng.com/" target="_blank" rel="noreferrer" className="img-container"><img src={oohacad} className="project-img" alt="academy website" /></a>
           <h3 className="project-title">OOH ACADEMY</h3>
@@ -47,16 +58,6 @@ function Projects() {
             <li>SCSS</li>
           </ul>
           <a href="https://thgram.netlify.app/" className="project-link" target="_blank" rel="noreferrer" >GO</a>
-        </div>
-        <div className="project">
-          <a href="https://mslyn-stores.netlify.app/" target="_blank" rel="noreferrer" className="img-container"><img src={ecomm} className="project-img" alt="ecommerce website" /></a>
-          <h3 className="project-title">MSLYN STORES</h3>
-          <p>React Context and CSS empower this e-commerce store, blending design and functionality for immersive shopping with dynamic content</p>
-          <ul className="project-stack">
-            <li>React</li>
-            <li>CSS</li>
-          </ul>
-          <a href="https://mslyn-stores.netlify.app/" className="project-link" target="_blank" rel="noreferrer" >GO</a>
         </div>
         
       </div>
