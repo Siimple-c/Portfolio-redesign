@@ -19,7 +19,7 @@ const Navbar = () => {
             <a href="#contact" className="link">Contact</a>
           </li>
           <li className="list-item">
-            <a href="https://drive.google.com/file/d/18JiFm8V2LSvW_0HbVO6U5VvZdDse3n9a/view" target='_blank'rel="noreferrer" className="link" id="cv">Download CV</a>
+            <a href="https://drive.google.com/file/d/1FMkdbY-Nrhuha_0hjX5QHpwpkC5HywVt/view?usp=drive_link" target='_blank'rel="noreferrer" className="link" id="cv">Download CV</a>
           </li>
         </ul>
       </nav>
